@@ -1,0 +1,76 @@
+<!-- FILE: contacto.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solicitar Información</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Solicitar más información</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="sobre la causa.html">Soluciones</a>
+      <a href="como ayudar.html">Solicitar info</a>
+      <a href="recursos.html">Recursos & Noticias</a>
+    </nav>
+  </header>
+
+  <main class="container">
+  <!--formulario-->
+  <section>
+      <h2>Formulario: Solicitar boletín informativo</h2>
+	  <p>si le interesara apoyar a la causa o saber mas infromacion sobre este asunto favor de llenar el siguiente folmulario.</p>
+      <form action="#" method="post" class="form-card">
+        <label>Nombre completo
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Correo electrónico
+          <input type="email" name="email" required>
+        </label>
+        <label>Municipio / Ciudad
+          <input type="text" name="ciudad">
+        </label>
+        <label>¿Qué información desea recibir?
+          <select name="interes">
+            <option value="boletin">Boletín mensual</option>
+            <option value="capacitacion">Capacitaciones</option>
+            <option value="voluntariado">Oportunidades de voluntariado</option>
+          </select>
+        </label>
+        <label>Comentarios / Mensaje
+          <textarea name="mensaje" rows="4"></textarea>
+        </label>
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </section>
+<!--formulario anonimo-->
+<!--el proposito es que si en algun momento se hiciera una pagina completamente funcional
+	esta sea una manera de notificarles a los policias anonimamente-->
+    <section>
+      <h2>Formulario corto: Reportar un posible punto de riesgo (anónimo)</h2>
+	  <p> aqui puede notificar un punto de posible riesgo de forma completamente anonima
+      <form action="#" method="post" class="form-inline">
+        <label>Ubicación o referencia
+          <input type="text" name="ubicacion" placeholder="Ej: PR-2, cerca X">
+        </label>
+		<br>
+        <label>Descripción breve
+          <input type="text" name="descripcion" placeholder="Ej: bares sin transporte seguro">
+        </label>
+		<br>
+        <button type="submit">Reportar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 - Angel Orengo Galarza</p>
+  </footer>
+</body>
+</html>
+
+
